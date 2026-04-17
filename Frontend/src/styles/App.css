@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover effects */
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition duration-300;
+}
+
+.btn-success {
+  @apply bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300;
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300;
+}
+
+/* Stats card styles */
+.stat-card {
+  @apply bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500;
+}
+
+/* Navigation styles */
+.nav-link {
+  @apply text-gray-600 hover:text-blue-600 transition duration-300 font-medium;
+}
+
+.nav-link.active {
+  @apply text-blue-600 font-semibold;
+}
+
+/* Responsive text */
+@media (max-width: 640px) {
+  .responsive-text {
+    font-size: 0.875rem;
+  }
+}
+
+/* Custom shadows */
+.shadow-custom {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Animation for charts */
+.chart-fade-in {
+  animation: chartFadeIn 0.8s ease-in-out;
+}
+
+@keyframes chartFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
